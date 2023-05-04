@@ -1,4 +1,4 @@
-# chapter-1 Web Application (In)security
+# Chapter-1 Web Application (In)security
 
 ## The Evolution of Web Applications
 
