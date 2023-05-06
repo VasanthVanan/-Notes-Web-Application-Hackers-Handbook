@@ -32,6 +32,3 @@ The notes are organized by chapter and section:
 
 ## Usage
 Feel free to use these notes as a reference or study guide for web application security & bug bounty.
-
-## Contributing
-Contributions are welcome! If you notice any errors or have additional information to add, feel free to submit a pull request.
