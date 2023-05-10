@@ -8,8 +8,8 @@ The book is a overall guide to find and exploit security flaws in web applicatio
 The notes are organized by chapter and section:
 | Chapter | Title |
 | --- | --- |
-| 1 | Web Application (In)security |
-| 2 | Core Defense Mechanisms |
+| 1 | [Web Application (In)security](https://github.com/VasanthVanan/Notes-Web-Application-Hackers-Handbook/blob/main/Chapters/Chapter-1%20Web%20Application%20(In)security.md) |
+| 2 | [Core Defense Mechanisms](https://github.com/VasanthVanan/Notes-Web-Application-Hackers-Handbook/blob/main/Chapters/Chapter-2%20Core%20Defense%20Mechanisms.md) |
 | 3 | Web Application Technologies |
 | 4 | Mapping the Application |
 | 5 | Bypassing Client-Side Controls |
