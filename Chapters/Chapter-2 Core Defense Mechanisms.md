@@ -61,13 +61,16 @@ The fundamental security problem is that all user input is untrusted, and attack
 
 Approaches to Handling Malicious Input includes:
 
-1. **Reject Known Bad**: Uses a blacklist of known attack patterns, but can be easily bypassed.
+1. **Reject Known Bad**: Uses a blacklist of known attack patterns, but can be easily bypassed.<br>
+   `If SELECT is blocked, try SeLeCt`<br>`If or 1=1-- is blocked, try or 2=2--`<br>`If alert(‘xss’) is blocked, try prompt(‘xss’)`<br>`%00<script>alert(1)</script>`
 2. **Accept Known Good**: Employs a whitelist of safe input, but may not be suitable for all situations.
 3. **Sanitization**: Cleans potentially unsafe data before processing.
-4. **Safe Data Handling**: Ensures inherently safe processing of user input.
-5. **Semantic Checks**: Validates user input to prevent unauthorized access.
+4. **Safe Data Handling**: Ensures inherently safe processing of user input.<br>
+  `For example, SQL injection attacks can be pre-vented through the correct use of parameterized queries for database access`
+5. **Semantic Checks**: Validates user input to prevent unauthorized access.<br>
+   `For example, an attacker might seek to gain access to another user’s bank account by changing an account number transmitted in a hidden form field. No amount of syntactic validation will distinguish between the user’s data and the attacker’s.`
 
-# 3.0 Boundary Validation  
+## 2.2 Boundary Validation  
 
 * The security problem with web applications is that data received from users is untrusted.
 * Input validation checks on the client side do not provide assurance about the data that reaches the server.
@@ -80,3 +83,85 @@ Approaches to Handling Malicious Input includes:
   <br><img src="../Images/image-4.png"  width="550" height="300">
 * Suitable validation is performed at each step of the user login process to defend against specific types of crafted input.
 * Similar defenses would need to be implemented at relevant trust boundaries for other application components that involve passing data.
+
+## 2.3 Multistep Validation and Canonicalization
+
+* Multistep validation and canonicalization can lead to vulnerabilities in input-handling mechanisms.
+* Manipulating user-supplied input across multiple validation steps can allow attackers to bypass filters.<br>
+  * For example, an application may attempt to defend against some cross-site scripting attacks by stripping the expression:<br>
+      * `<script>`<br>
+  * from any user-supplied data. However, an attacker may be able to bypass the filter by supplying the following input:<br>
+      * `<scr<script>ipt>`<br>
+* Application filters that remove or encode certain characters or expressions may be bypassed by cleverly crafted input.
+* The ordering of validation steps can be exploited by attackers to defeat filters.
+* Data canonicalization, which converts or decodes data into a common character set, can also be used to bypass validation mechanisms.
+* Encoding schemes, such as URL encoding or HTML encoding, can be leveraged to bypass filters after canonicalization.
+* Multiple validation and canonicalization steps can occur on both the server side and the client side of the application.
+* Best fit character mapping can be used to smuggle blocked characters or keywords past input filters.
+* There is no single solution to avoiding multistep validation and canonicalization problems, and it may require a case-by-case approach.
+* Recursive sanitization steps can help, but infinite loops may occur if problematic characters are escaped.
+* Rejecting certain types of bad input altogether may be a preferable solution when feasible.
+
+# 3.0 Handling Attackers
+
+Measures implemented to handle attackers typically include the following tasks:
+
+* Handling errors
+* Maintaining audit logs
+* Alerting administrators
+* Reacting to attacks
+
+## 3.1 Handling errors
+
+* Malicious users may interact with the application in unexpected ways, leading to further errors during attacks.
+* Graceful error handling is a key defense mechanism, allowing the application to recover or display appropriate error messages to users.
+* Production applications should not return system-generated messages or debug information in their responses.
+  <br><img src="../Images/image-5.png"  width="550" height="320">
+* Overly verbose error messages can aid malicious users in their attacks.
+* Defective error handling can be exploited to extract sensitive information from error messages.
+* Web development languages provide error-handling support through try-catch blocks and checked exceptions.
+* Application code should extensively use these constructs to catch and handle errors.
+* Application servers can be configured to deal with unhandled errors in customized ways, such as presenting uninformative error messages.
+* Effective error handling is often integrated with the application's logging mechanisms to record debug information about unexpected errors.
+* Recording such information helps identify defects in the application's defenses, allowing for necessary improvements.
+
+## 3.2 Maintaining Audit Logs
+
+* Effective audit logs should provide a clear understanding of the incident, exploited vulnerabilities, unauthorized access or actions, and potential evidence of the intruder's identity.
+* Key events to be logged include authentication-related activities, key transactions (e.g., credit card payments, funds transfers), blocked access attempts, and requests with known attack strings.
+* Security-critical applications, like online banks, often log every client request for comprehensive forensic records.
+* Logs need strong protection against unauthorized access, and storing them on an autonomous system that only accepts update messages from the main application is a recommended approach.
+* In some cases, logs may be stored on write-once media to maintain their integrity in the event of a successful attack.
+* Poorly protected audit logs can expose sensitive information, such as session tokens and request parameters, which can lead to the compromise of the entire application.
+
+## 3.3 Alerting Administrators
+
+* Audit logs allow retrospective investigation of intrusion attempts and potential legal action.
+* Immediate real-time actions are often necessary in response to attacks, such as blocking IP addresses or user accounts.
+* Alerting mechanisms should strike a balance between reliable reporting of genuine attacks and avoiding excessive alerts that go unnoticed.
+* Monitored anomalies include unusual usage patterns, abnormal financial transactions, known attack strings, and unauthorized modifications.
+* Off-the-shelf application firewalls and intrusion detection products offer some functions but are limited by the unique nature of each web application.
+* To implement real-time alerting effectively, it is crucial to tightly integrate it with the application's input validation and other controls.
+* Tailored checks based on the application's logic provide customized indicators of malicious activity & minimize false positives.
+
+## 3.4 Reacting to Attacks
+
+* Security-critical applications often have built-in mechanisms to defensively react to potentially malicious users.
+* Real-world attacks require systematic probing for vulnerabilities through crafted input.
+* Effective input validation mechanisms can block potentially malicious requests, but some bypasses may exist.
+* Applications may take automatic reactive measures to frustrate attackers, such as slowing down responses or terminating sessions.
+* These measures deter casual attackers and buy time for administrators to monitor and take further action.
+* Reacting to attackers is not a substitute for fixing vulnerabilities, but it provides an additional layer of defense.
+* Adding obstacles for attackers is a defense-in-depth measure that reduces the likelihood of finding and exploiting residual vulnerabilities.
+
+# 4.0 Managing the Application
+
+* Managing and administering applications is essential for their proper functioning and security.
+* Administrative functions are often integrated into the application's web interface.
+  <br><img src="../Images/image-6.png"  width="550" height="300">
+* The administrative mechanism is a potential target for attackers seeking privilege escalation.\
+* Inadequate access control may allow attackers to create new user accounts with powerful privileges.
+* Cross-site scripting vulnerabilities in the administrative interface can compromise user sessions with high privileges.
+* Administrative functionality is often less rigorously tested for security, assuming trusted users or limited access for penetration testers.
+* Administrative tasks may involve dangerous operations, such as accessing files or executing OS commands.
+* If an attacker compromises the administrative function, they can gain control over the entire server.
