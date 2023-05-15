@@ -8,7 +8,7 @@ Web applications face a fundamental security problem as all user input is untrus
 
 Since these mechanisms make up the majority of an application's attack surface, it's important to thoroughly understand them to effectively attack applications. It's important to identify weak points in these mechanisms to find vulnerabilities in web applications.
 
-# 1.0 Handling User Access
+# 2.1 Handling User Access
 
 Web applications need to control users' access to data and functionality, which can be achieved through 
 * authentication, 
@@ -17,7 +17,7 @@ Web applications need to control users' access to data and functionality, which 
 
 Different categories of users require different levels of access, and a defect in any one of these mechanisms can compromise the security of the entire application. Therefore, all three mechanisms must be strong to ensure robust security.
 
-## 1.1 Authentication
+## 2.1.1 Authentication
 
 * Authenticating a user is important to establish their identity and trust level in an application.
 * Majority of web applications use username-password based authentication.
@@ -30,7 +30,7 @@ Different categories of users require different levels of access, and a defect i
 * Login Functionality:
   <br><img src="../Images/image-1.png"  width="550" height="350">
 
-## 1.2 Session Management
+## 2.1.2 Session Management
 
 * To enforce access control, web applications need to manage authenticated user sessions.
 * Sessions are a set of data structures held on the server that track the state of the user's interaction with the application, and they are identified by tokens.
@@ -42,7 +42,7 @@ Different categories of users require different levels of access, and a defect i
   <br><img src="../Images/image-2.png"  width="550" height="200">
 
 
-## 1.3 Access Control
+## 2.1.3 Access Control
 
 * The final step in handling user access is to make correct decisions about each individual request.
 * The application needs to decide whether the user is authorized to perform the action or access the data they request.
@@ -53,11 +53,11 @@ Different categories of users require different levels of access, and a defect i
 * Application enforcing access control:
   <br><img src="../Images/image-3.png"  width="550" height="300">
 
-# 2.0 Handling User Input 
+# 2.2 Handling User Input 
 
 The fundamental security problem is that all user input is untrusted, and attacks against web applications often involve submitting unexpected input. Input-based vulnerabilities can arise in any part of an application and with any type of technology. Input validation is frequently cited as the necessary defense, but no single protective mechanism can be used everywhere, and defending against malicious input is not always simple.
   
-## 2.1 Approaches to Input Handling  
+## 2.2.1 Approaches to Input Handling  
 
 Approaches to Handling Malicious Input includes:
 
@@ -70,7 +70,7 @@ Approaches to Handling Malicious Input includes:
 5. **Semantic Checks**: Validates user input to prevent unauthorized access.<br>
    `For example, an attacker might seek to gain access to another user’s bank account by changing an account number transmitted in a hidden form field. No amount of syntactic validation will distinguish between the user’s data and the attacker’s.`
 
-## 2.2 Boundary Validation  
+## 2.2.2 Boundary Validation  
 
 * The security problem with web applications is that data received from users is untrusted.
 * Input validation checks on the client side do not provide assurance about the data that reaches the server.
@@ -84,7 +84,7 @@ Approaches to Handling Malicious Input includes:
 * Suitable validation is performed at each step of the user login process to defend against specific types of crafted input.
 * Similar defenses would need to be implemented at relevant trust boundaries for other application components that involve passing data.
 
-## 2.3 Multistep Validation and Canonicalization
+## 2.2.3 Multistep Validation and Canonicalization
 
 * Multistep validation and canonicalization can lead to vulnerabilities in input-handling mechanisms.
 * Manipulating user-supplied input across multiple validation steps can allow attackers to bypass filters.<br>
@@ -102,7 +102,7 @@ Approaches to Handling Malicious Input includes:
 * Recursive sanitization steps can help, but infinite loops may occur if problematic characters are escaped.
 * Rejecting certain types of bad input altogether may be a preferable solution when feasible.
 
-# 3.0 Handling Attackers
+# 2.3 Handling Attackers
 
 Measures implemented to handle attackers typically include the following tasks:
 
@@ -111,7 +111,7 @@ Measures implemented to handle attackers typically include the following tasks:
 * Alerting administrators
 * Reacting to attacks
 
-## 3.1 Handling errors
+## 2.3.1 Handling errors
 
 * Malicious users may interact with the application in unexpected ways, leading to further errors during attacks.
 * Graceful error handling is a key defense mechanism, allowing the application to recover or display appropriate error messages to users.
@@ -125,7 +125,7 @@ Measures implemented to handle attackers typically include the following tasks:
 * Effective error handling is often integrated with the application's logging mechanisms to record debug information about unexpected errors.
 * Recording such information helps identify defects in the application's defenses, allowing for necessary improvements.
 
-## 3.2 Maintaining Audit Logs
+## 2.3.2 Maintaining Audit Logs
 
 * Effective audit logs should provide a clear understanding of the incident, exploited vulnerabilities, unauthorized access or actions, and potential evidence of the intruder's identity.
 * Key events to be logged include authentication-related activities, key transactions (e.g., credit card payments, funds transfers), blocked access attempts, and requests with known attack strings.
@@ -134,7 +134,7 @@ Measures implemented to handle attackers typically include the following tasks:
 * In some cases, logs may be stored on write-once media to maintain their integrity in the event of a successful attack.
 * Poorly protected audit logs can expose sensitive information, such as session tokens and request parameters, which can lead to the compromise of the entire application.
 
-## 3.3 Alerting Administrators
+## 2.3.3 Alerting Administrators
 
 * Audit logs allow retrospective investigation of intrusion attempts and potential legal action.
 * Immediate real-time actions are often necessary in response to attacks, such as blocking IP addresses or user accounts.
@@ -144,7 +144,7 @@ Measures implemented to handle attackers typically include the following tasks:
 * To implement real-time alerting effectively, it is crucial to tightly integrate it with the application's input validation and other controls.
 * Tailored checks based on the application's logic provide customized indicators of malicious activity & minimize false positives.
 
-## 3.4 Reacting to Attacks
+## 2.3.4 Reacting to Attacks
 
 * Security-critical applications often have built-in mechanisms to defensively react to potentially malicious users.
 * Real-world attacks require systematic probing for vulnerabilities through crafted input.
@@ -154,12 +154,12 @@ Measures implemented to handle attackers typically include the following tasks:
 * Reacting to attackers is not a substitute for fixing vulnerabilities, but it provides an additional layer of defense.
 * Adding obstacles for attackers is a defense-in-depth measure that reduces the likelihood of finding and exploiting residual vulnerabilities.
 
-# 4.0 Managing the Application
+# 2.4 Managing the Application
 
 * Managing and administering applications is essential for their proper functioning and security.
 * Administrative functions are often integrated into the application's web interface.
   <br><img src="../Images/image-6.png"  width="550" height="300">
-* The administrative mechanism is a potential target for attackers seeking privilege escalation.\
+* The administrative mechanism is a potential target for attackers seeking privilege escalation.
 * Inadequate access control may allow attackers to create new user accounts with powerful privileges.
 * Cross-site scripting vulnerabilities in the administrative interface can compromise user sessions with high privileges.
 * Administrative functionality is often less rigorously tested for security, assuming trusted users or limited access for penetration testers.
