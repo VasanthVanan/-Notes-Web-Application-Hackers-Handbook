@@ -10,7 +10,7 @@ The notes are organized by chapter and section:
 | --- | --- |
 | 1 | [Web Application (In)security](https://github.com/VasanthVanan/Notes-Web-Application-Hackers-Handbook/blob/main/Chapters/Chapter-1%20Web%20Application%20(In)security.md) |
 | 2 | [Core Defense Mechanisms](https://github.com/VasanthVanan/Notes-Web-Application-Hackers-Handbook/blob/main/Chapters/Chapter-2%20Core%20Defense%20Mechanisms.md) |
-| 3 | Web Application Technologies |
+| 3 | [Web Application Technologies](https://github.com/VasanthVanan/Notes-Web-Application-Hackers-Handbook/blob/main/Chapters/Chapter-3%20Web%20Application%20Technologies.md) |
 | 4 | Mapping the Application |
 | 5 | Bypassing Client-Side Controls |
 | 6 | Attacking Authentication |
