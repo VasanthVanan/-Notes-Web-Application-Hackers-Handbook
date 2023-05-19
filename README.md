@@ -1,7 +1,6 @@
-# ✍🏼Notes: Web-Application-Hackers-Handbook
+# ✍🏼 Notes: Web Application Hackers Handbook
 
-This repository contains notes taken while reading "The Web Application Hackers Handbook", second edition. (Authors: Dafydd Stuttard, Marcus Pinto). 
-The book is a overall guide to find and exploit security flaws in web applications.
+This repository contains notes taken while reading "The Web Application Hackers Handbook", second edition. (Authors: Dafydd Stuttard, Marcus Pinto). The book is a overall guide to find and exploit security flaws in web applications.
 
 ## Table of Contents
 
