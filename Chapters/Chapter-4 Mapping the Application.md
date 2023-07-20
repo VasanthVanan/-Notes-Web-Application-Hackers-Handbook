@@ -1,4 +1,4 @@
-# Chapter-4 Mapping the Application
+ # Chapter-4 Mapping the Application
 
 This chapter provides practical steps, techniques, tricks, and tools for effective application mapping.
 
@@ -116,7 +116,7 @@ This chapter provides practical steps, techniques, tricks, and tools for effecti
    ```
 - `Functional paths` focus on the application's core functionality and logical relationships between functions.
 - functionality through functional paths provides a more informative catalog.<br>
-  <img src="https://uc62e402aa7a3c362bdf64adeafb.previews.dropboxusercontent.com/p/thumb/AB6ZMsik_12Jkn78wlUnoAIHalYaAYR-ePgdwZGchHw5wRyqLod71vRuay4vApmuiElQbVGyQjbZzrnyZCZ68_uHWT2rEUIZF0JdiBaF27GXLmrs-PLlBidG2jvj2Jq1cbEzvagvZv-si9Li03DbN5yQOa1K0VP99BnibPo9Yx_eDBH991hJd271jE2CX5dIMmcHUWFfbd2rxpHtuo1_2lojE6bd9TxPSftObSiXUApkDaaPo7GVIhJAcKiiSabii9XXdEpYIA-pcNjZtWG9pMo8Q0M-m3Cp9JtM1gR4rRaMk9vwZ_XCaEd4ELtzpq7XMOHR6LeNjLHMcms7jxG9jZwWYuNsxze7G9T8WloNT0SxmWjsz0vsuT1jJ8JdxXpL6eLkG2LaNJp0fq4M0FVF3VVNRS2hV8kHxeNA1GunpepXpA/p.png" width="550" height="350">
+  <img src="https://lh3.googleusercontent.com/pw/AIL4fc_-igcK90kB-Q6zhy7chRp8w2ftjJWcGQcY8EIvuuny-AZDT89FqYDca9lOg4GywbIINnsBnF8YxltZzUZVPPw1vtrVojmf0mo9dWyiamSHcfJIYDc7giEqckoYP-_UwPWPmQdcGQ9WnFvrSiVXL6ez=w968-h750-s-no" width="550" height="350">
 - Identifying logical relationships helps understand developers' expectations and formulate potential attacks.
 
 ## 4.1.5 Discovering Hidden Parameters
