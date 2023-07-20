@@ -28,7 +28,7 @@ Different categories of users require different levels of access, and a defect i
 * Attacks on authentication-related functions can lead to unauthorized access to sensitive data and functionality.
 
 * Login Functionality:
-  <br><img src="https://ucc0457a47da53fc2113bd4e9a28.previews.dropboxusercontent.com/p/thumb/AB5wNC22mqAvDEX1CYRXWv-3zxBtOaP1sFANa6brLXGpuPVZL_j72TAMxBPeWORA7sJgQyadk0hkn2Q2xAL5LTePgTppI8TKJqL43IXT7IhuBmIsaMbQvRvCMrZ_ZP2frq6wYRlR7nMa2K5w4YCe0zU8qF_0i64IcBIPAZAIIZOcFSqsbHctdqMMxRwg4yuNSfRS7PTVolICzUj9UGFTXngEeAh76bC7ePy7fQpPaOhC_Dzs4cjxkyk4g_9EWDSud7rfrcl1uoYXlL14RVMvgxxd93FsjUMKqDxB4_Lz8Ld6DUhs-PxjQtVXX-cJRGUYHcAgLr8ScB_gOXnKPt72xlX0efmoQMp-bxe-BiyInvQfwmgFe0lM5FLKWL91mVHjkSSwu0dUQcUpv0vk88j761mv9p63M4fqLMNO1WScIRgeHg/p.png"  width="550" height="350">
+  <br><img src="https://lh3.googleusercontent.com/pw/AIL4fc-AvcQ5SI9xgGajgxbSx02AC6UKar1lIG7zXgyAavtkNTjOXe-CVVzh3pmc67Wyuc5x_6JWNFV3N3xTaRAxGSEnHJsZPaDi4RamOud1CBQohQYPqPbHg88_d6lIm_Knw_dPZCbGDh6nGmISNY0EL6Or=w1452-h900-s-no"  width="550" height="350">
 
 ## 2.1.2 Session Management
 
@@ -39,7 +39,7 @@ Different categories of users require different levels of access, and a defect i
 * Defects in how tokens are generated or handled can enable attackers to guess or capture other users' tokens.
 * Some applications don't use session tokens and instead use HTTP's built-in authentication mechanism or storing state information on the client side.
 * Session Timeout:
-  <br><img src="https://uc890df6bb269d49d3945ae429a9.previews.dropboxusercontent.com/p/thumb/AB4Pb8wyrH4rAjB_JE4HjwSzSxO5QP8D_NAxFFGvfNM-lBdqYOCPbDr-nqHi5tQOoH8rKlxygpYJcs7dL6w0KYdNwB4F1zlwrxwSX_3aMUiBo7pHCkdYNvdKCLJQOCxH6S-x_x7VnWggsGDHG7sqBQozUOgcowcruO0vw3B_bqrl3_9MOLFN322Rs0MAuhxndqFsK4uMuPC_TFGqaM8ta5db1pxS11ODmudHrGHwPyr5Zx_rX-z7h2sqCHecUYJxFBNigAtXNrNdeCzH9riICukVGr7LBENazVvI_uY_OIRwXeNMJkwRjPfCysGJRwnufkyQHewM5vaMZpWHmyxBUtL8NdptjCC6hKTOA5pbaqCRsworDdHB0M2g1UpMTOa3kMlOM9Llf1XvbWHLNbpLxgcoI1DEjFj1UIQf1smoydFQqg/p.png"  width="550" height="200">
+  <br><img src="https://lh3.googleusercontent.com/pw/AIL4fc9D89vhC1zc5Yhhu0CmgW5VjNNyQpZpy23VnecM_JigI786otDEmm0kmOKpZkTOxmbhStYTYwEC7iukKu5le5Od_YEXaYX3RgwFsA2Rx6_GdloJ-QeVA4uQal1ePw5s7vRPV3K1KBG2kPXGCJjIN6ve=w1812-h666-s-no"  width="550" height="200">
 
 
 ## 2.1.3 Access Control
@@ -51,7 +51,7 @@ Different categories of users require different levels of access, and a defect i
 * Developers often make flawed assumptions and oversights in access control checks.
 * Access control testing is a worthwhile investment as access control flaws are prevalent.
 * Application enforcing access control:
-  <br><img src="https://uc044f8f3198733f3edfbbec4a22.previews.dropboxusercontent.com/p/thumb/AB41Gq7oIvf9qLB7kPyEw13iDtQdvKSz-6sMoAJnsSUiAstu6tF-kuTyO91PTVsrMgS6nbDZCNWZMORtgRb1t4OXNJZ_qwrIKqs3VjTogMLOLzNNsyyjETYyCdLVVZRvDawktZlcQRKiQ9LAdzAyBiUKeYYWCDzZc5O7hBRoKowrV0VUScrg1Klnqe3YcvwdqXfSAFgkugXmpjXKMNBq4elwAMo0UfpSn6aVDFqZzIXDSsegUCiFRaLvWvifTJlVBfSXsFkxWnsZRnrwMniBBm_RgsfYVJQCmRoVtmq3xDWqZ4rUMY3xjhNPtx2lznn2NybFDAriVTwyXC0QH7X2HJSc7A1Vbepta5o_jQNZ0-P6K_lWHJI87oU_pzZjbuEBW9vO39JF9H0nWBBMLljc-psrHY6QcBQ1-37ScYmr5rV0OA/p.png"  width="550" height="300">
+  <br><img src="https://lh3.googleusercontent.com/pw/AIL4fc9h8qz8oU-ogoZO-MypNH_u28PfEyK4t0HyGtKrNc6rXt5Q0tWNhUK0FUGfyT5PaU9leBmd-56xYnYWe-JHnsBdlSrXUEqDJyor-s9s_UZyhUqYTAxq-zM5KgHmXpcQz6IVd_FepPuFxTSyJBrtLdE2=w1920-h934-s-no"  width="550" height="300">
 
 # 2.2 Handling User Input 
 
@@ -80,7 +80,7 @@ Approaches to Handling Malicious Input includes:
 * Data validation is performed at each trust boundary, in addition to the external frontier between the client and server.
 * Validation checks are implemented at different stages of processing and are unlikely to conflict with one another.
 * Below Image illustrates a typical situation where boundary validation is the most effective approach to defending against malicious input.
-  <br><img src="https://uc0f9abb04717233790a18039a91.previews.dropboxusercontent.com/p/thumb/AB4yUz0ZOMFgv_lU74hcyUCJQNCx6hrsLX8JX4K9zR6wzDIdQ7_N5RRUN4jGPEUQvFJd4lq596cfOPhxTTlNqKg0hdt6u0FNEpm9Ok61cn9wQENTQ8SUboK2mFROqYr84bNvZNeN-UCC54SwoSzZNTYQfln-8OPEt9ckFJmEnggMX8OwMh-GkHxeXr9gCtQZdcYRr2Y76VMmbDdoSYjrVR1Zh2Mlfkoj7c13UhnoTlamnLw4w9_APON-IYMPXWtiO93vgK9KYjUXzP8FIr6bJON8Rlb7q6xC5GHXRyoMti4pS_BdbpOGlaSVU3Mh5c4x8LbFlKCaS279efRuzCALZS4IdmSn--J3zLDJURgnynBA7W5dh02-G2udn-PTTCInr-9F4cUF2sz1azFyUoScTDehp_P8m9pTpIJD-f7A6k1bpw/p.png"  width="550" height="300">
+  <br><img src="https://lh3.googleusercontent.com/pw/AIL4fc8HQ-FnL0cwkISL7JxFidcg3mdu4-W6qAB8Hm1gR-saBXJWF4SbNE3TkPZS1QBCVngj2oTsQH-ErksSbsZQGc8hugh4yPVFRWBIVSI5UfHSXcbyHC_3LLdq_PmRwxwULl2mnUvDFsrAgbG7WSNXZsLN=w1794-h1094-s-no"  width="550" height="300">
 * Suitable validation is performed at each step of the user login process to defend against specific types of crafted input.
 * Similar defenses would need to be implemented at relevant trust boundaries for other application components that involve passing data.
 
@@ -116,7 +116,7 @@ Measures implemented to handle attackers typically include the following tasks:
 * Malicious users may interact with the application in unexpected ways, leading to further errors during attacks.
 * Graceful error handling is a key defense mechanism, allowing the application to recover or display appropriate error messages to users.
 * Production applications should not return system-generated messages or debug information in their responses.
-  <br><img src="https://uc15f18abd66a09cae5e4d32ea16.previews.dropboxusercontent.com/p/thumb/AB5qWz_pVaFjHvn2LN9FZWgfryUYnd0vx0NLmHycklH1FSE8dCQmUjCtZ5yYWvAzh8RYSoihdr6J2tF-Au7pU6uC5gjvGdHG4Zr-imdtEy5CLcHoWGmOIVHNoVCkehlt8gHJT9a0AuMLq3a8E10g4sdmlANL8KYNem61kg0AqieaO5tP2qzWQojaM9tW6jwzDSk9vJsMxCyLxyZ4_CDaV7R1K6sTrDsOVvXPXrYqTTAk7e12JhgILk7I20vTKt674wAPmJrC2feCx-hiry5_LizahmuVnBmrwytodUXIWzTD15A0umYH4bcskVonEWGz6N-rRc-dFEU3YbnJvLqq3YJtalDZraGs5QPOOpIxvbRlw_1uhpDFk96juuwzvxub0wnf3dR2f1q9gRvTgo4n8mouZNtHaXOArh1RUFw2r4FYyA/p.png"  width="550" height="320">
+  <br><img src="https://lh3.googleusercontent.com/pw/AIL4fc8uwEaJObgZ3TRPSPuIq3JEq82RARgk2KR1Ua7nekrPBrsfGtznMfL7U9YS9b29sFhiQpTwuiOgquc3F7VSrirjOpZ9ltUev_NAT-imkSTScSA4LrEgUCp2x8MLZOJlH0CanUXWB8-SCSW9gyjI6b-q=w1436-h1130-s-no"  width="550" height="320">
 * Overly verbose error messages can aid malicious users in their attacks.
 * Defective error handling can be exploited to extract sensitive information from error messages.
 * Web development languages provide error-handling support through try-catch blocks and checked exceptions.
@@ -158,7 +158,7 @@ Measures implemented to handle attackers typically include the following tasks:
 
 * Managing and administering applications is essential for their proper functioning and security.
 * Administrative functions are often integrated into the application's web interface.
-  <br><img src="https://ucdade17d494cf23a70de6423845.previews.dropboxusercontent.com/p/thumb/AB6qXtlyWSF82_7tlqYLpSfMHvXnawNFBLSdldlRWosZOB0zMMww_4nK0QD3JaU49gsndb6PHiRBGsKeLUprHk3fVH58sEYf3Gi4yT2SLInNAq-7rFS2owHX0bG3DPMK8inCosyPkRKrCFbZDo58GtidqKiTlV_IR66waL0CA-Hqg4uMOmDxMyw7iiLil2IbRwcCvD7GvDwhSxZ4u4_t8hHvudmU1tiTH1Ogc04qFc5ZxPBqY4G9apkSkjQ9M7kp69lu8A7hM-F28SDLlbXHh17xlnyjXWJx3SCZK3C1S8UNlan8qZRto1xqYZHk2XerKrDCHYPBKjtXlkvFS660-BDZTdMbA53lb68D8LfewlC-7UV9ndjKr19HuH3s040nwMdNLmlNNg_9eOVWFvCZHth0KNrVALLlJ9puY_ec8yWWnw/p.png"  width="550" height="300">
+  <br><img src="https://lh3.googleusercontent.com/pw/AIL4fc_zJMtVEytHSkK36EaVB9uo8EiJGrwvAz-xnm5-2-qo6MesSKsRwWkYG9eJEFXQthDvCPIHTxhiDfZVoOgDP_ndcS4NDU0zTjevycz3lazZra0AU4wHNSt0RIqEq0bMDDHVGf--0VqkjnfiYR3o4pvb=w1920-h1108-s-no"  width="550" height="300">
 * The administrative mechanism is a potential target for attackers seeking privilege escalation.
 * Inadequate access control may allow attackers to create new user accounts with powerful privileges.
 * Cross-site scripting vulnerabilities in the administrative interface can compromise user sessions with high privileges.
