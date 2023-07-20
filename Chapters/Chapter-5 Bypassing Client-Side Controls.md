@@ -168,4 +168,4 @@ HTML forms are commonly used to capture user input and impose restrictions or pe
 - Disabled elements may indicate the presence of unused parameters in the application.
 - Test whether the server-side application still processes disabled parameters.
 
-    <img src="https://ucb4c4ff8aff0acd3eb2d392bd0d.previews.dropboxusercontent.com/p/thumb/AB6yzzAd0bCh5DGdPnYrnL9AcM9umWX3wlDva0NFN-Kqv2NwUkV-DwH9ZsH3lH18nWYQ_XJE2DuCNhPYzfMw-k4tugR73af-ZH9m_FtmLP1pkofvBpth9S81WakMPE-9j2cMbhbyBbGyaD5nbjOC7oar5tGKPRetlYO-DKcgKOBbZtd967OR-riaDo3Rsp6dyUO1-_0RIso1e3tCkPFMJbPjBB3VCO7mVxurAdHzPfGnnAwhlFTfGuxih1Fy57SibU9VHyecQ41-5Bm6vm9wZPXcCNMKqtNucGxpW7wUq1Lj5f4-VG8eG_DjMU15z_YBOY3XnM9nrMRFzWRAvg4bhjhEMG9PlFNRQOxdExD44Rz9NRHQhb7hx_R8W_1XN3wworKPqco7epTyc8uWLkUVa_fEHN9lfnYYqOCYnm5P1rODCw/p.png" width="600" height="200">
+    <img src="https://lh3.googleusercontent.com/pw/AIL4fc974zCdV_fEtHpp1Ikk382taY4Iu8abeFdsuhBpWZmb7wUIxPvdWPMiqA2OifDTDxu_jk7jeQt70mLXmYBpp6odfKLGN3LuMDhf_NjmNFxLq2AnpSCEM9D5DLsnUn53-WwagiNcFU7LdVvQQ9je6sF6=w1478-h582-s-no" width="600" height="200">
