@@ -2,6 +2,8 @@
 
 This repository contains notes taken while reading "The Web Application Hackers Handbook", second edition. (Authors: Dafydd Stuttard, Marcus Pinto). The book is a overall guide to find and exploit security flaws in web applications.
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Table of Contents
 
 The notes are organized by chapter and section:
